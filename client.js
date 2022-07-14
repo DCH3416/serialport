@@ -2,10 +2,13 @@ var dgp = '';
 
 const fs = require('fs');
 
-if (process.argv.length > 1) {
+function usage() {
+	console.log('Usage: client.js [jsonfile]');
+}
+
+if (process.argv.length > 2) {
 	var args = process.argv.slice(2).toString();
 	dgp = fs.readFileSync(args);
-}
 
 var jgp = JSON.parse(dgp);
 
@@ -22,4 +25,8 @@ socket.on('connect', function() { //Don't send until we're connected
         console.log('Rx: ' + message.result);
     });
 });
+
+} else {
+	usage();
+}
 
