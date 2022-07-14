@@ -24,7 +24,7 @@ The *omcw.js* application can be used to send control word to device.
       0b0000    Where bit A is 1: region separator is on
          ^^^          bit B is 1: top section is solid
          ABC          bit C is 1: bottom section is solid
-                With least significant bit on right.
+                      With least significant bit on right.
                       
       0b0101 = 5, region sep, bottom solid. 
       ```
