@@ -21,7 +21,7 @@ The omcw.js application can be used to send control word to device.
 -   This example shows solid top and bottom, with page 51 on top, and page 1 on the bottom.
     byte2 corrosponds to the following table
     ``` 
-    0b0000    Where bit A is 1: region separator is on
+      0b0000    Where bit A is 1: region separator is on
          ^^^          bit B is 1: top section is solid
          ABC          bit C is 1: bottom section is solid
                       With least significant bit on right.
