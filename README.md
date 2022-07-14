@@ -14,7 +14,7 @@ The *client.js* application sends json formatted data to device running serialpo
 Edit var host = '...' in code to appropriate device on LAN.
 
 
-The omcw.js application can be used to send control word to device. 
+The *omcw.js* application can be used to send control word to device. 
 
 - Usage: node omcw.js byte2 tpage bpage byte1
 - Example: node omcw.js 7 51 1
